@@ -1,0 +1,67 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		 {
+		 	"path": "pages/index/index",
+		 	"style": {
+		 		"navigationBarTitleText": "子期",
+		 		"enablePullDownRefresh": true
+		 	}
+		 },
+		 {
+		    "path" : "pages/talk/talk",
+		     "style": {
+		    	"navigationBarTitleText": "聊天室"
+		    }
+		},
+		
+	    {
+            "path" : "pages/my/my",
+            "style": {
+            	"navigationBarTitleText": "my"
+            }
+        }
+        ,{
+            "path" : "pages/write/write",
+            "style": {
+            	"navigationBarTitleText": "write"
+            }
+        }
+       
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "#fff",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fc6c6c",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar" : {
+        "color" : "#707070",
+        "selectedColor" : "#DE533A",
+        "list" : [
+            {
+                "pagePath" : "pages/index/index",
+                "text" : "家",
+                "iconPath" : "static/nav1.png",
+                "selectedIconPath" : "static/nav1-a.png"
+            },
+            {
+                "pagePath" : "pages/write/write",
+                "text" : "相册",
+                "iconPath" : "static/nav2.png",
+                "selectedIconPath" : "static/nav2-a.png"
+            },
+			{
+			    "pagePath" : "pages/talk/talk",
+			    "text" : "消息",
+			    "iconPath" : "static/nav2.png",
+			    "selectedIconPath" : "static/nav2-a.png"
+			},
+            {
+                "pagePath" : "pages/my/my",
+                "text" : "我的",
+                "iconPath" : "static/nav3.png",
+                "selectedIconPath" : "static/nav3-a.png"
+            }
+        ]
+    }
+}
